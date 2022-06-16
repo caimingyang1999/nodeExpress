@@ -54,7 +54,7 @@ router.post('/postLogin',(req,res)=>{
     })
 })
 
-// 注册
+// 注册账号
 router.post('/register',(req,res)=>{
     let {uname,upwd} =  req.body 
     pool.query('select * from t_login where uname=?',[uname],(err,result)=>{

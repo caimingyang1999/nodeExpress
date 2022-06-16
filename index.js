@@ -12,6 +12,8 @@ app.use(bodyParser.json())
 app.use(router)
 app.use(upLoad)
 app.use(cors())
+
+
 app.use(express.static('upload'))
 
 
